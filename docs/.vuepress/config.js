@@ -81,7 +81,7 @@ module.exports = {
         {
           iconClass: 'icon-github',
           title: 'GitHub',
-          link: 'https://github.com/1137518450'
+          link: 'https://github.com/1137518450/Blog/'
         },
         {
           iconClass: 'icon-erji',
@@ -92,7 +92,7 @@ module.exports = {
     },
     footer: { // 页脚信息
       createYear: 2019, // 博客创建年份
-      copyrightInfo: 'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
+      copyrightInfo: 'JXJ | <a href="https://github.com/1137518450/Blog/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
     }
   },
   plugins: [ // 插件
@@ -100,7 +100,7 @@ module.exports = {
       color: '#11a8cd', // 爱心颜色，默认随机色
       excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
     }],
-    
+
 
     ['thirdparty-search', { // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）
       thirdparty: [ // 可选，默认 []
