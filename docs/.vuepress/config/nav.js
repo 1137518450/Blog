@@ -20,7 +20,7 @@ module.exports = [
       ]}
     ]
   },
-
+  
   {
     text: '博客技术',
     link: '/technology/',
