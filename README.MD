@@ -17,7 +17,7 @@
 
 * [文档 (github源)](https://github.com/1137518450/Blog)
 * [文档 (国内源)](https://doc.xugaoyi.com/vuepress-theme-vdoing-doc/)
-* [效果：Evan's blog](https://coding-pages-bucket-3479149-7982989-3595-351994-1303861403.cos-website.ap-hongkong.myqcloud.com/)
+* [效果：JXJ blog](https://coding-pages-bucket-3479149-7982989-3595-351994-1303861403.cos-website.ap-hongkong.myqcloud.com/)
 
 ## 介绍
 1. 这个主题的初衷是打造一个好用的、面向程序员的`知识管理工具`

@@ -22,7 +22,7 @@ module.exports = [
   },
 
   {
-    text: '博客搭建',
+    text: '博客技术',
     link: '/technology/',
     items: [
       {text: '技术文档', link: '/pages/9a7ee40fc232253e/'},
