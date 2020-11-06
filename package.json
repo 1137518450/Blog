@@ -5,12 +5,11 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "editFm": "node utils/editFrontmatter.js",
-    "deploy":"bash deploy.sh",
-    "local_deploy":"bash local_deploy.sh",
+    "deploy": "bash deploy.sh",
+    "local_deploy": "bash local_deploy.sh",
     "baiduPush": "node utils/baiduPush.js https://xugaoyi.com && bash baiduPush.sh",
     "publish": "cd theme-vdoing && npm publish && cd ../ && npm update vuepress-theme-vdoing"
   },
-  
   "license": "MIT",
   "devDependencies": {
     "inquirer": "^7.1.0",
@@ -27,6 +26,7 @@
     "yamljs": "^0.3.0"
   },
   "dependencies": {
-    "vuepress-plugin-comment": "^0.7.3"
+    "vuepress-plugin-comment": "^0.7.3",
+    "vuepress-plugin-music-bar": "^3.7.6"
   }
 }

@@ -101,7 +101,6 @@ module.exports = {
       excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
     }],
 
-
     ['thirdparty-search', { // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）
       thirdparty: [ // 可选，默认 []
         {
@@ -197,7 +196,39 @@ module.exports = {
           return moment(timestamp).format('YYYY/MM/DD, H:MM:SS');
         }
       }
+    ],
+    [
+      "music-bar",  //音乐插件
+      {
+        //手动添加歌曲,支持 URLs 或 base64 data URIs ,默认为空
+        //Add songs manually, support URLs or base64 data URIs, empty by default
+        playList: [],
+  
+        platform: [
+          //目前仅支持网易云 TODO:多平台支持,默认为空数组
+          //Currently only supports Netease Cloud Music,
+          //the default is an empty array TODO: Multi-platform support,
+          {
+            name: "music.163.com",
+            songIDs:[],//支持多个歌曲 ID  //Support multiple song IDs
+            playListIDs: ["5297686419"] //支持多个歌单 ID  //Support multiple playlist IDs
+          }
+        ],
+  
+        timeOut: 2000, //加载超时,单位毫秒,默认2000  //Load timeout in milliseconds, default 2000
+  
+        firstClickPlay: true //首次点击自动播放,对移动端友好  //The first click autoplay, mobile friendly
+  
+        //debugMode: <Boolean> Development mode, if in the dev environment,
+        //                     output log to console, enabled by default
+  
+        //background: <String> //主容器样式  //Main container style
+        //                       default: "linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%)"
+  
+        //frameColor: <String> default: $accentColor
+      }
     ]
+
   ],
   // configureWebpack: {
   //   //webpack别名 如![Image from alias](~@alias/image.png)
@@ -207,4 +238,5 @@ module.exports = {
   //     }
   //   }
   // }
+
 }
