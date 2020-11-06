@@ -162,31 +162,33 @@ module.exports = {
     ],
     [
       'vuepress-plugin-comment', // 评论
-      // {
-      //   choosen: 'valine',
-      //   options: {
-      //     el: '#valine-vuepress-comment',
-      //     appId: 'qnS1jobNF7CROIQ0XYWBnVOH-gzGzoHsz',
-      //     appKey: 'LIKa0ePqFMkglQfOkN0JNK6c',
-      //     avatar: 'monsterid'
-      //   }
-      // },
       {
-        choosen: 'gitalk',
+        choosen: 'valine',
         options: {
-          clientID: 'a6e1355287947096b88b',
-          clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-          repo: 'blog-gitalk-comment', // GitHub 仓库
-          owner: 'xugaoyi', // GitHub仓库所有者
-          admin: ['xugaoyi'], // 对仓库有写权限的人
-          // distractionFreeMode: true,
-          pagerDirection: 'last', // 'first'正序 | 'last'倒序
-          id: "<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>", //  页面的唯一标识,长度不能超过50
-          title: "「评论」<%- frontmatter.title %>", // GitHub issue 的标题
-          labels: ["Gitalk", "Comment"], // GitHub issue 的标签
-          body: "页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>" // GitHub issue 的内容
+          el: '#valine-vuepress-comment',
+          appId: "xmdlqMfxFVFIJ6WLFH5kMIFw-gzGzoHsz",
+          appKey: "EDwTdFxE52Tm1EczDhmcm6LT",
+          path: "<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>",
+          // visitor: true, // 阅读量统计
+          // avatar: robohash // (''/mp/identicon/monsterid/wavatar/robohash/retro/hide) 头像
         }
       }
+      // ,{
+      //   choosen: 'gitalk',
+      //   options: {
+      //     clientID: 'a6e1355287947096b88b',
+      //     clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
+      //     repo: 'blog-gitalk-comment', // GitHub 仓库
+      //     owner: 'xugaoyi', // GitHub仓库所有者
+      //     admin: ['xugaoyi'], // 对仓库有写权限的人
+      //     // distractionFreeMode: true,
+      //     pagerDirection: 'last', // 'first'正序 | 'last'倒序
+      //     id: "<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>", //  页面的唯一标识,长度不能超过50
+      //     title: "「评论」<%- frontmatter.title %>", // GitHub issue 的标题
+      //     labels: ["Gitalk", "Comment"], // GitHub issue 的标签
+      //     body: "页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>" // GitHub issue 的内容
+      //   }
+      // }
     ],
     [
       '@vuepress/last-updated', // "上次更新"时间格式
