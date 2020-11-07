@@ -2,7 +2,7 @@ module.exports = [
   {text: '首页', link: '/'},
   {
     text: 'Python',
-    link:'/pages/a378bd8e/',
+    link:'/python/',
     items: [
       {text: '初识Python', link: '/pages/596b7022/'},
     ]
