@@ -7,10 +7,10 @@ const readFileList = require('./modules/readFileList');
 const { type, repairDate, dateFormat } = require('./modules/fn');
 const log = console.log
 const path = require('path');
-
+const crc32 = require('./crc32');
 const PREFIX = '/pages/'
 
-
+var gettitle
 /**
  * 给.md文件设置frontmatter(标题、日期、永久链接等数据)
  */
@@ -21,7 +21,7 @@ function setFrontmatter (sourceDir, themeConfig) {
   const categoryText = themeConfig.categoryText || '随笔'
 
   const files = readFileList(sourceDir); // 读取所有md文件数据
-
+ 
   files.forEach(file => {
     let dataStr = fs.readFileSync(file.filePath, 'utf8');// 读取每个md文件内容
 
@@ -32,6 +32,8 @@ function setFrontmatter (sourceDir, themeConfig) {
       const stat = fs.statSync(file.filePath);
       const dateStr = dateFormat(getBirthtime(stat));// 文件的创建时间
       const categories = getCategories(file, categoryText)
+
+      gettitle = file.name;
 
       // 注意下面这些反引号字符串的格式会映射到文件
       const cateStr = isCategory === false ? '' : `
@@ -126,9 +128,15 @@ function getBirthtime (stat) {
 }
 
 // 定义永久链接数据
-function getPermalink () {
-  return `${PREFIX + (Math.random() + Math.random()).toString(16).slice(2, 8)}/`
-}
+// function getPermalink () {
+//   return `${PREFIX + (Math.random() + Math.random()).toString(16).slice(2, 8)}/`
+// }
+// 定义永久链接数据
+function getPermalink() {
 
+  var abbrlink = crc32.str(gettitle) >>> 0;
+  abbrlink = abbrlink.toString(16)
+  return `${PREFIX+abbrlink}/`
+}
 
 module.exports = setFrontmatter;
