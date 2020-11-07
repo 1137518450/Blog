@@ -6,24 +6,25 @@
       :class="{'hide-banner': !showBanner}"
       :style="bannerBgStyle"
     >
+
       <div
         class="banner-conent"
         :style="!homeData.features && !homeData.heroImage && `padding-top: 7rem`"
       >
+
         <header class="hero">
           <img
             v-if="homeData.heroImage"
             :src="$withBase(homeData.heroImage)"
             :alt="homeData.heroAlt"
           />
-          <h1
-            v-if="homeData.heroText"
-            id="main-title"
-          >{{ homeData.heroText }}</h1>
-          <p
-            v-if="homeData.tagline"
-            class="description"
-          >{{ homeData.tagline }}</p>
+          <h1 v-if="homeData.heroText" id="main-title">
+            {{ homeData.heroText }}
+          </h1>
+          <p v-if="homeData.tagline" class="description">
+            {{ homeData.tagline }}
+          </p>
+          <Search/>                
           <p
             class="action"
             v-if="homeData.actionText && homeData.actionLink"
@@ -192,6 +193,7 @@ import Pagination from '@theme/components/Pagination'
 import BloggerBar from '@theme/components/BloggerBar'
 import CategoriesBar from '@theme/components/CategoriesBar'
 import TagsBar from '@theme/components/TagsBar'
+import Search from '@theme/components/Search'
 
 const MOBILE_DESKTOP_BREAKPOINT = 720 // refer to config.styl
 
@@ -212,7 +214,7 @@ export default {
       currentPage: 1// 当前页
     }
   },
-  components: { NavLink, MainLayout, PostList, UpdateArticle, BloggerBar, CategoriesBar, TagsBar, Pagination },
+  components: { NavLink, MainLayout, PostList, UpdateArticle, BloggerBar, CategoriesBar, TagsBar, Pagination,Search },
   created () {
     this.total = this.$sortPosts.length
   },

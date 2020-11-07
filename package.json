@@ -26,6 +26,7 @@
     "yamljs": "^0.3.0"
   },
   "dependencies": {
+    "jquery": "^3.5.1",
     "vuepress-plugin-comment": "^0.7.3",
     "vuepress-plugin-music-bar": "^3.7.6"
   }
