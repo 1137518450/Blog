@@ -4,7 +4,11 @@ module.exports = [
     text: 'Python',
     link:'/python/',
     items: [
-      {text: '初识Python', link: '/pages/596b7022/'},
+      {text: 'Python基础', items: [
+        {text: '初识Python', link: '/pages/596b7022/'},
+        {text: 'python入门—认识基础数类型和运算符', link: '/pages/3765eb43/'},
+        {text: 'python入门—if、while、for语句', link: '/pages/bfd6c90e/'},
+      ]},
     ]
   },
   {
