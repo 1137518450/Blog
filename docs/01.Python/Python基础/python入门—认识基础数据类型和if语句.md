@@ -78,4 +78,58 @@ int #（整型）
 ```python
 "hello world" #str
 ```
+## (4)、列表
+
+```python
+list #列表：
+name_list = ['alex', 'seven', 'eric']
+#或
+name_list ＝ list(['alex', 'seven', 'eric'])
+```
+## (5)、元祖
+
+```python
+tuple #元组
+ages = (11, 22, 33, 44, 55)
+#或
+ages = tuple((11, 22, 33, 44, 55))
+```
+
+## (6)、字典（无序）
+
+```python
+dict #字典
+person = {"name": "mr.wu", 'age': 18}
+#或
+person = dict({"name": "mr.wu", 'age': 18})
+```
+
+PS：循环，range，continue 和 break
+
+# 7、if...else... #if语句
+
+```python
+a=10
+b=int(input("b=")) #input输入，输入b值
+if a>b: #if如果，意思是如果a<b
+    print("a比较大") #TAB缩进或者四个空格缩进，同级语句格式应该保持一致
+    print("a比较大")
+    print("a比较大")
+    print("a比较大")
+else: #else否则，这里的意思就是a<=b
+    print("NO")
+```
+
+# 8、if...elif...elif... #多分支if语句
+
+```python
+a=10
+b=int(input("b=")) #input输入，输入b值
+if a<b: #if如果，意思是如果a<b
+    print("a比较大")
+elif a==b:
+    print("等于")
+elif:
+    print("b比较大")
+```
 
