@@ -6,6 +6,7 @@ module.exports = {
   // base: '/', // '/<github仓库名>/'， 默认'/'
   head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
     ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['meta', { name: 'keywords', content: 'Python博客,个人技术博客,前端,后端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown' }],
     ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }],// 百度统计的站点拥有者验证
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
@@ -67,8 +68,8 @@ module.exports = {
     sidebar: 'structuring', // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
 
     author: { // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, link: String}
-      name: 'xugaoyi', // 必需
-      link: 'https://github.com/xugaoyi' // 可选的
+      name: 'JXJ', // 必需
+      link: 'https://github.com/1137518450/Blog' // 可选的
     },
     blogger: { // 博主信息，显示在首页侧边栏
       avatar: '/img/logo.gif',
@@ -234,7 +235,14 @@ module.exports = {
   
         //frameColor: <String> default: $accentColor
       }
-    ]
+    ],
+    ['@vuepress/pwa',{
+      serviceWorker: true,
+      updatePopup: {
+        message: "发现新内容可用.",
+        buttonText: "刷新"
+      }
+    }],
 
   ],
   // configureWebpack: {

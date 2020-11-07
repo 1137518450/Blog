@@ -1,0 +1,193 @@
+---
+title: 初识Python
+date: 2020-11-07 16:26:01
+permalink: /pages/596b7022/
+categories:
+  - Python
+  - Python基础
+tags:
+  - 
+---
+# Python前世今生
+
+python的创始人为吉多·范罗苏姆（Guido van Rossum）。1989年的圣诞节期间，吉多·范罗苏姆为了在阿姆斯特丹打发时间，决心开发一个新的脚本解释程序，作为ABC语言的一种继承。 
+
+最新的2018TIOBE排行榜，Python赶超PHP占据第4！！！
+
+![img](https://pictore-1303861403.cos.ap-chengdu.myqcloud.com/1424879-20180620182438962-1952889584.png)
+
+由上图可见，Python整体呈上升趋势，反映出Python应用越来越广泛并且也逐渐得到业内的认可！！！
+
+Python可以应用于众多领域，如：数据分析、组件集成、网络服务、图像处理、数值计算和科学计算等众多领域。目前业内几乎所有大中型互联网企业都在使用Python，如：Youtube、Dropbox、BT、Quora（中国知乎）、豆瓣、知乎、Google、Yahoo!、Facebook、NASA、百度、腾讯、汽车之家、美团等。互联网公司广泛使用Python来做的事一般有：**自动化运维**、**自动化测试**、**大数据分析、爬虫、Web 等。**
+
+注视：上述重点字体表示该公司主要使用Python语言开发
+
+# 编程语言介绍
+
+什么是编程语言？
+定义好一套与计算机交互的语法规则，这套规则 就可称为一门编程语言
+
+
+我们听不懂日语是因为不懂日语的语法规则
+
+学编程 == 学语法规则
+
+# 编程能干什么？
+
+print hello world
+eject cd
+
+一堆指令的组合 == 》 软件
+
+有很多套与计算机交互的语法规则，
+600多种编程语言
+C = 各个操作系统的开发语言 1973
+
+C++ = C++是C语言的加强版 ，1983年，贝尔实验室的Bjarne Stroustrup在C语言基础上推出了C++[1] 。 C++进一步扩充和完善了C语言，是一种面向对象的程序设计语言。
+
+java = 1995 由sun 公司开发出来，java 虚拟机 支持跨平台
+
+php = 1994, 纯web开发语言， 1994 Netscape 浏览器诞生了
+
+python = 1989年诞生， 刚开始被做为脚本语言， 开发小任务， 跟linux同年诞生，89，1991,苏联解体， 1991年正式版本
+
+
+C# = c sharpe =C#是微软公司发布的一种面向对象的、运行于.NET Framework之上的高级程序设计语言。并定于在微软职业开发者论坛(PDC)上登台亮相。C#是微软公司研究员Anders Hejlsberg的最新成果。C#看起来与Java有着惊人的相似；它包括了诸如单一继承、接口、与Java几乎同样的语法和编译成中间代码再运行的过程。但是C#与Java有着明显的不同，它借鉴了Delphi的一个特点，与COM（组件对象模型）是直接集成的，而且它是微软公司 .NET windows网络框架的主角。
+
+
+ruby = Ruby， 一种简单快捷的面向对象（面向对象程序设计）脚本语言，在20世纪90年代由日本人松本行弘(Yukihiro Matsumoto)开发，遵守GPL协议和Ruby License。它的灵感与特性来自于 Perl、Smalltalk、Eiffel、Ada以及 Lisp 语言。由 Ruby 语言本身还发展出了JRuby（Java平台）、IronRuby（.NET平台）等其他平台的 Ruby 语言替代品。Ruby的作者于1993年2月24日开始编写Ruby，直至1995年12月才正式公开发布于fj（新闻组）。因为Perl发音与6月诞生石pearl（珍珠）相同，因此Ruby以7月诞生石ruby（红宝石）命名。
+Ruby on rails web框架
+
+perl = Unix平台上开发出来的语言，做文字处理非常强大， 可以写出没人能看懂的代码
+
+shell = 脚本语言， 简单易学，基于unix,linux, 做一些简单的系统管理任务， 运维人员必学
+
+scalar = Scala是一门多范式的编程语言，一种类似java的编程语言[1] ,大数据开发
+
+erlang = 是一种通用的面向并发的编程语言，它由瑞典电信设备制造商爱立信，函数式编程
+
+go ===Go语言是谷歌2009发布的第二款开源编程语言。Go语言专门针对多处理器系统应用程序的编程进行了优化，使用Go编译的程序可以媲美C或C++代码的速度，而且更加安全、支持并行进程。
+
+javascript = 是当下使用最为广泛的语言，主要写前端的语言，nodejs =后端 全栈式的语言
+
+vb = 微软的脚本语言，bat脚本
+
+lua = nginx 的脚本语言， ngnix 是时下最nb web服务器
+
+# 为什么是Python而不是其他语言？
+
+C 和 Python、Java、C#等
+
+  C语言： 代码编译得到 机器码 ，机器码在处理器上直接执行，每一条指令控制CPU工作
+
+其他语言： 代码编译得到 字节码 ，虚拟机执行字节码并转换成机器码再后在处理器上执行
+
+Python 和 C  Python这门语言是由C开发而来
+
+　　对于使用：Python的类库齐全并且使用简洁，如果要实现同样的功能，Python 10行代码可以解决，C可能就需要100行甚至更多.
+　　对于速度：Python的运行速度相较与C，绝逼是慢了
+
+Python 和 Java、C#等
+
+　　对于使用：Linux原装Python，其他语言没有；以上几门语言都有非常丰富的类库支持
+　　对于速度：Python在速度上**可能**稍显逊色
+
+所以，Python和其他语言没有什么本质区别，其他区别在于：擅长某领域、人才丰富、先入为主。
+
+# Python的种类
+
+- Cpython
+    Python的官方版本，使用C语言实现，使用最为广泛，CPython实现会将源文件（py文件）转换成字节码文件（pyc文件），然后运行在Python虚拟机上。
+- Jyhton
+    Python的Java实现，Jython会将Python代码动态编译成Java字节码，然后在JVM上运行。
+- IronPython
+    Python的C#实现，IronPython将Python代码编译成C#字节码，然后在CLR上运行。（与Jython类似）
+- PyPy（特殊）
+    Python实现的Python，将Python的字节码字节码再编译成机器码。
+- RubyPython、Brython ...
+
+以上除PyPy之外，其他的Python的对应关系和执行流程如下：
+
+![img](https://images2015.cnblogs.com/blog/425762/201510/425762-20151024113930614-2128955181.png) ![img](https://images2015.cnblogs.com/blog/425762/201510/425762-20151024114048849-189055880.png)
+
+PyPy，在Python的基础上对Python的字节码进一步处理，从而提升执行速度！
+
+![img](https://images2015.cnblogs.com/blog/425762/201510/425762-20151024114724817-2135944387.png)
+
+Python发展史
+Python 2.6 - October 1, 2008
+Python 2.6.1 - October 1, 2008
+Python 2.6.6 - October 1, 2008
+Python 3.0 - December 3, 2008
+Python 2.7 - July 3, 2010 #目前业内主流使用的工业版本依然是2.7
+
+print "hello world" #in 2.x
+print("hello world") #in 3.x
+
+In summary : Python 2.x is legacy, Python 3.x is the present and future of the language
+总结: python2.x 是遗产， python3.x是现在和未来的语言
+
+python 2 vs 3区别
+1、 默认支持中文
+2、 不兼容2.x
+3、 核心语法调整，更易学
+4.、新特性默认只在3.x上有
+
+# Python环境 
+
+## 安装Python
+
+### windows：
+
+```python
+1、下载安装包
+    https://www.python.org/downloads/
+2、安装
+    默认安装路径：C:\python27
+3、配置环境变量
+    【右键计算机】--》【属性】--》【高级系统设置】--》【高级】--》【环境变量】--》【在第二个内容框中找到 变量名为Path 的一行，双击】 --> 【Python安装目录追加到变值值中，用 ； 分割】
+    如：原来的值;C:\python27，切记前面有分号
+```
+
+### linux：
+
+```python
+无需安装，原装Python环境
+  
+ps：如果自带2.6，请更新至2.7
+```
+
+## 更新Python
+
+### windows：
+
+```python
+卸载重装即可
+```
+
+### linux：
+
+Linux的yum依赖自带Python，为防止错误，此处更新其实就是再安装一个Python
+
+```python
+查看默认Python版本
+python -V
+  
+1、安装gcc，用于编译Python源码
+    yum install gcc
+2、下载源码包，https://www.python.org/ftp/python/
+3、解压并进入源码文件
+4、编译安装
+    ./configure
+    make all
+    make install
+5、查看版本
+    /usr/local/bin/python2.7 -V
+6、修改默认Python版本
+    mv /usr/bin/python /usr/bin/python2.6
+    ln -s /usr/local/bin/python2.7 /usr/bin/python
+7、防止yum执行异常，修改yum使用的Python版本
+    vi /usr/bin/yum
+    将头部 #!/usr/bin/python 修改为 #!/usr/bin/python2.6
+```
+

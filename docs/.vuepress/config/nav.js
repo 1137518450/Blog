@@ -1,6 +1,12 @@
 module.exports = [
   {text: '首页', link: '/'},
-  {text: 'Python基础',link:'/pages/503970b4/'},
+  {
+    text: 'Python',
+    link:'/pages/a378bd8e/',
+    items: [
+      {text: '初识Python', link: '/pages/596b7022/'},
+    ]
+  },
   {
     text: '前端',
     link: '/web/',  //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
